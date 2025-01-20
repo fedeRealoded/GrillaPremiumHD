@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grilla de Canales</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>COYSPU - GRILLA DE CANALES PREMIUM HD</h1>
+  </header>
+  <div class="container">
+    <div id="channel-grid" class="channel-grid"></div>
+  </div>
+
+  <script>
+    // Cargar el archivo JSON y generar la grilla
+    fetch('channels.json') // Nombre del archivo JSON
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Error al cargar el archivo JSON');
+        }
+        return response.json();
+      })
+      .then(data => {
+        const grid = document.getElementById('channel-grid');
+
+        // Recorrer los datos y generar los elementos de los canales
+        data.forEach(channel => {
+          // Crear el contenedor del canal
+          const channelDiv = document.createElement('div');
+          channelDiv.className = 'channel';
+
+          // Agregar el número del canal
+          const channelNumber = document.createElement('div');
+          channelNumber.className = 'channel-number';
+          channelNumber.textContent = channel.number;
+          channelDiv.appendChild(channelNumber);
+
+          // Agregar el logo del canal
+          const channelLogo = document.createElement('img');
+          channelLogo.src = channel.logo;
+          channelLogo.alt = `${channel.name} logo`;
+          channelDiv.appendChild(channelLogo);
+
+          // Agregar el nombre del canal
+          const channelName = document.createElement('div');
+          channelName.className = 'channel-name';
+          channelName.textContent = channel.name;
+          channelDiv.appendChild(channelName);
+
+          // Añadir el canal al grid
+          grid.appendChild(channelDiv);
+        });
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        const grid = document.getElementById('channel-grid');
+        grid.textContent = 'No se pudo cargar la grilla de canales.';
+      });
+  </script>
+</body>
+</html>
