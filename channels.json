@@ -1,5 +1,4 @@
-{
-  "channels": [
+ [
     { "number": "1", "name": "TN HD", "logo": "logos/tn-todo-noticias-ar.png" },
     { "number": "2", "name": "AMERICA 24", "logo": "logos/america-24-ar.png" },
     { "number": "3", "name": "CRONICA TV HD", "logo": "logos/cronica-tv-ar.png" },
@@ -144,4 +143,4 @@
     { "number": "508", "name": "Mi Musica Reggaeton HD", "logo": "logos/mi-musica-reggaeton-ar.png" },
     { "number": "509", "name": "Allegro HD", "logo": "logos/allegro-ar.png" }
   ]
-}
+
