@@ -136,11 +136,11 @@
     { "number": "501", "name": "HTV HD", "logo": "logos/htv-ar.png" },
     { "number": "502", "name": "CANAL DE LA MUSICA", "logo": "logos/canal-musica-ar.png" },
     { "number": "503", "name": "TELEHIT", "logo": "logos/telehit-ar.png" },
-    { "number": "504", "name": "QUIERO MUSICA HD", "logo": "logos/quiero-musica-ar.png" },
+    { "number": "504", "name": "QUIERO MUSICA HD", "logo": "logos/quiero-musica-en-mi-idioma-ar.png" },
     { "number": "505", "name": "MTV HD", "logo": "logos/mtv-ar.png" },
     { "number": "506", "name": "MI MUSICA HITS HD", "logo": "logos/mi-musica-hits-ar.png" },
     { "number": "507", "name": "Mi Musica Romantica HD", "logo": "logos/mi-musica-romantica-ar.png" },
     { "number": "508", "name": "Mi Musica Reggaeton HD", "logo": "logos/mi-musica-reggaeton-ar.png" },
-    { "number": "509", "name": "Allegro HD", "logo": "logos/allegro-ar.png" }
+    { "number": "509", "name": "Allegro HD", "logo": "logos/allegro-hd-ar.png" }
   ]
 
