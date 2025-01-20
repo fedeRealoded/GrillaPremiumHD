@@ -1,0 +1,91 @@
+/* Estilo general de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Grilla de canales */
+.channel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+/* Cada canal */
+.channel {
+  text-align: center;
+  padding: 8px;
+  border: 2px solid #2f553a;
+  border-radius: 5px;
+  background-color: #CEC5A6;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.channel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Número del canal */
+.channel-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+/* Imagen del logo */
+.channel img {
+  max-width: 70%;
+  max-height: 70px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Nombre del canal */
+.channel-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Adaptaciones para pantallas pequeñas */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .channel-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .channel img {
+    max-height: 80px;
+  }
+}
